@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Definindo o documento como HTML5-->
+
+<html lang="pt-br" class="">
+  <!-- [html] Elemento raíz do html - [lang] Atributo de linguagem -->
+
+  <head>
+    <!-- [head] Tag para configurar o documento em partes não visíveis para usuário. Exceto o title. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- [fonts.google.com] link adquirido no google -->
+
+    <meta charset="UTF-8" />
+    <!-- o meta com o atributo [charset="UTF-8"] define quais conjuntos de caracteres podem ser utilizados, no caso podem os especiais. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- [name="viewport"] parte onde se encontra o conteudo da page. - [content="width=device-width, initial-scale=1.0"] Parte1 (width=device-width): define que a largura da page será igual a da tela, assim se adaptando. Parte2 (initial-scale=1.0) Define que a page inicia com escala normal (1:1), mas o usuario pode aumentar ou diminuir.-->
+    <title>Document</title>
+    <!--   -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- [rel=] Atributo que cria relação - ["stylesheet"] Tipo de relação - [href] onde está o item (ex:imagem ou page), add o link-->
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar-dark.png"
+          alt="Imagem: Rigby personagem do desenho Apenas um Show da Cartoon Network."
+        />
+        <p>@ApenasUmShow</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <ul>
+        <!-- [ul] Lista desordenada (ponto) - [ol] lista ordenada (numerada)-->
+        <li>
+          <a href="#"> Inscrever-se </a>
+        </li>
+
+        <li>
+          <a href="#"> Baixar eBook </a>
+        </li>
+
+        <li>
+          <a href="#"> Veja o portifólio </a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank"> Conheça me </a>
+          <!-- [target="_blank"] abre o link sem sair da pagina atual -->
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <a
+          href="https://www.adorocinema.com/filmes/filme-147203/"
+          target="_blank"
+        >
+          <ion-icon name="heart"></ion-icon>
+        </a>
+
+        <a href="https://www.nfl.com/" target="_blank">
+          <ion-icon name="american-football-outline"></ion-icon>
+        </a>
+
+        <a
+          href="https://www.playstation.com/pt-br/?emcid=pa-ha-430499&gclid=Cj0KCQjw1_SkBhDwARIsANbGpFuN7PcuKsB2vNe7uFDj4sXmR_AWpDNbakphr9dQVIV1XYa8TRYutUsaAvacEALw_wcB"
+          target="_blank"
+        >
+          <ion-icon name="game-controller-outline"></ion-icon>
+        </a>
+
+        <a href="https://open.spotify.com/intl-pt" target="_blank">
+          <ion-icon name="headset-outline"></ion-icon>
+        </a>
+      </div>
+
+      <footer>Feito com ♥ pelo DBev</footer>
+      <!-- Rodapé -->
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
